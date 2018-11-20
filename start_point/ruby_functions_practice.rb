@@ -93,6 +93,11 @@ def number_to_full_month_name(num)
   end
 
   def volume_of_sphere(radius)
-volume = Math::PI * 1.33 * (radius ** 3)
-return volume
+    volume = Math::PI * 1.33 * (radius ** 3)
+    return volume
+  end
+
+  def fahrenheit_to_celsius(temp_in_fahrenheit)
+    temperature_in_celsius = (temp_in_fahrenheit - 32) * 0.55
+    return temperature_in_celsius.round(3)
   end
