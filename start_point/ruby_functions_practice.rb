@@ -91,3 +91,8 @@ def number_to_full_month_name(num)
   def volume_of_cube(side_length)
     side_length ** 3
   end
+
+  def volume_of_sphere(radius)
+volume = Math::PI * 1.33 * (radius ** 3)
+return volume
+  end
