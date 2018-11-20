@@ -23,12 +23,12 @@ class FunctionsTest < MiniTest::Test
       multiply_result = multiply( 4, 2 )
       assert_equal( 8, multiply_result )
     end
-  #
-  # def test_divide()
-  #   divide_result = divide( 10, 2 )
-  #   assert_equal( 5, divide_result )
-  # end
-  #
+  
+  def test_divide()
+    divide_result = divide( 10, 2 )
+    assert_equal( 5, divide_result )
+  end
+
   def test_length_of_string()
     test_string = "A string of length 21"
     length_of_string = length_of_string( test_string )
@@ -47,9 +47,7 @@ class FunctionsTest < MiniTest::Test
     assert_equal( 3, add_result )
   end
 
-def method_name
-  
-end
+
   # def test_number_to_full_name__month_1()
   #   result = number_to_full_month_name( 1 )
   #   assert_equal( "January", result )
